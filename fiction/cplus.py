@@ -9,8 +9,8 @@ __license__ = 'ISC'
 __version__ = '0.5.0.0'
 __status__ = 'Development'
 
-from item_model import Actor, Thing, Room, Substance
-from action_model import Modify, Sense
+from item_model import Actor, Thing, Substance
+from action_model import Modify
 import can
 
 import fiction.cloak

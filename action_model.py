@@ -8,8 +8,6 @@ __status__ = 'Development'
 
 import copy
 import re
-import types
-import discourse_model
 
 def generator(num):
     'Provides unique, increasing integers.'

@@ -12,7 +12,6 @@ from item_model import Actor, Door, Room, SharedThing, Substance, Thing
 from action_model import Behave, Configure, Modify, Sense
 from joker import update_spin
 import can
-import when
 
 discourse = {
 
@@ -314,11 +313,11 @@ class Cosmos(Actor):
             not world.item['@troll'].parent == '@northeast_side_of_chasm'
             and basis.configure and basis.direct == '@adventurer' and
             basis.new_parent == '@northeast_side_of_chasm'):
-            appear = Configure('appear', '@cosmos',
-                               template='[direct/s] [appear/v]',
-                               direct='@troll',
-                               new=('in', '@northeast_side_of_chasm'),
-                               salience=0.9)
+            actions.append(Configure('appear', '@cosmos',
+                                    template='[direct/s] [appear/v]',
+                                    direct='@troll',
+                                    new=('in', '@northeast_side_of_chasm'),
+                                    salience=0.9))
             actions.append(Modify('change_blocked', '@cosmos',
                                  direct='@troll', feature='blocked',
                                  new=['cross', 'over', 'southwest'],

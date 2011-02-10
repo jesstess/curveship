@@ -8,10 +8,6 @@ __status__ = 'Development'
 
 import sys
 import re
-try:
-    import readline
-except ImportError:
-    pass
 
 import input_model
 

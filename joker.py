@@ -166,8 +166,6 @@ def load_fiction(file_name, required, defaults):
 
 def load_spin(existing_spin, spin_file):
     'Loads one spin file and returns an updated spin.'
-    focalizer = existing_spin['focalizer']
-    commanded = existing_spin['commanded']
     new_file = load_file(spin_file, [], discourse_model.SPIN_DEFAULTS, 'spin')
     if hasattr(new_file, 'spin'):
         existing_spin = update_spin(existing_spin, new_file.spin)
