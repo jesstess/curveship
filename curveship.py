@@ -24,7 +24,7 @@ import reply_planner
 import world_model
 
 class Multistream(object):
-    'Encapsultes multiple output streams.'
+    'Encapsulates multiple output streams.'
 
     def __init__(self, streams, log=None):
         self.streams = streams

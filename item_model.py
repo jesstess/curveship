@@ -14,7 +14,7 @@ import can
 import discourse_model
 
 def check_attributes(identifier, required, impossible, attributes):
-    'Raise errors if required attributes are missing or impossile ones present.'
+    'Raise errors if required attributes are missing or impossible ones present.'
     some_wrong = ''
     if 'parent' in impossible:
         if not len(identifier.split()) == 1:
@@ -127,13 +127,13 @@ def set_features(item, category, keywords):
         "The adventurer feels ..." or "You feel ..."
 
     hearing: string
-        Simimlar template for hearing.
+        Similar template for hearing.
 
     smell: string
-        Simimlar template for hearing.
+        Similar template for hearing.
 
     taste: string
-        Simimlar template for taste."""
+        Similar template for taste."""
 
     settings = {
         'article': '',
@@ -553,7 +553,7 @@ class SharedThing(Thing):
 
     SharedThing is provided to allow implementation of things like the sky, the
     sun, or a massive wall of the sort the United States has erected along the
-    US/Mexico border. Becasue shared things are meant to represent these sorts
+    US/Mexico border. Because shared things are meant to represent these sorts
     of entities, they have an allowed expression that always returns False.
     Nothing can be placed in one, on one, through one, be part of one, or be 
     held by one. If it were possible, for instance, to place a sticker on a 

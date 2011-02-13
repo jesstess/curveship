@@ -1,4 +1,4 @@
-'Represent different user inputs (commmands, directives, unrecognized).'
+'Represent different user inputs (commands, directives, unrecognized).'
 
 __author__ = 'Nick Montfort'
 __copyright__ = 'Copyright 2011 Nick Montfort'
@@ -55,7 +55,7 @@ class InputList(object):
     def _count(self, category):
         """Counts only those inputs in the specified category.
 
-        The frist count covers the whole session (everything in the list). The
+        The first count covers the whole session (everything in the list). The
         second only considers the current traversal."""
         session = len([i for i in self._all if getattr(i, category)])
         traversal = len([i for i in self._all[self._traversal_start:]

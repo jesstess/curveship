@@ -139,7 +139,7 @@ def freeze(agent, _, __):
                   template='[agent/s] [stand/v] very still')
 
 def give(agent, tokens, concept):
-    'to yield possesion of; to deliver over, as property'
+    'to yield possession of; to deliver over, as property'
     to_be_given = check_for_metonymy(tokens[1], concept)
     return Configure('give', agent,
                      template='[agent/s] [give/v] [direct/o] to [indirect/o]',
@@ -280,14 +280,14 @@ def remove_from(agent, tokens, concept):
                      old=(link, container), new=('of', agent))
 
 def smell(agent, tokens, concept):
-    'to percieve generally by the sense of smell'
+    'to perceive generally by the sense of smell'
     tokens.append(str(concept.room_of(agent)))
     action = smell_of(agent, tokens, concept)
     action.representation = '[agent/s] [sniff/v] around'
     return action
 
 def smell_of(agent, tokens, _):
-    'to percieve something by the sense of smell'
+    'to perceive something by the sense of smell'
     return Sense('smell', agent,
                  template='[agent/s] [smell/v] [direct/o]',
                  direct=tokens[1], modality='smell')
@@ -300,7 +300,7 @@ def take(agent, tokens, concept):
                      direct=to_be_taken, new=('of', agent))
 
 def taste(agent, tokens, _):
-    'to percieve by the sense of taste, by sampling a small bit'
+    'to perceive by the sense of taste, by sampling a small bit'
     return Sense('taste', agent,
                  template='[agent/s] [taste/v] [direct/o]',
                  direct=tokens[1], modality='taste')

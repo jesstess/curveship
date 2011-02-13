@@ -120,7 +120,7 @@ MESSAGE = {
 
 
 class StartupError(Exception):
-    'Exception occuring during session startup or in loading a spin.'
+    'Exception occurring during session startup or in loading a spin.'
     def __init__(self, msg):
         self.msg = msg
         Exception.__init__(self, msg)
@@ -237,7 +237,7 @@ def report(kind, *params):
 
 
 def set_role(role, tokens, world, discourse):
-    'Nams or change a narrative role, such as focalzier.'
+    'Name or change a narrative role, such as focalizer.'
     if len(tokens) == 2:
         report_text = report('is', discourse.spin[role], role)
     elif len(tokens) > 2 and tokens[2] == 'none':

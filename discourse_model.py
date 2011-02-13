@@ -226,7 +226,7 @@ class Typography(object):
 class Discourse(object):
     """The per-fiction/per-game discourse model.
 
-    This represents all exchanges of langauge between system and interactor and
+    This represents all exchanges of language between system and interactor and
     all verbal resources that are needed to recognize, narrate and describe, 
     and output replies from the Joker."""
 
@@ -758,7 +758,7 @@ class Discourse(object):
         'item_prominent_enough': '[direct/s] [is/not/v] prominent enough ' +
                                  'to pick out',
         'line_of_sight': '[direct/s] [is/not/v] visible',
-        'modify_to_different': '[agent/s] [try/ing/v] to chage [direct/o]' +
+        'modify_to_different': '[agent/s] [try/ing/v] to change [direct/o]' +
                                ' to a state [direct/s] already [is/v] in',
         'never_configure_doors': '[direct/s] [is/not/v] repositionable',
         'never_configure_parts': '[agent/s] [is/not/v] able to detach' +

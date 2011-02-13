@@ -1,4 +1,4 @@
-'World and Concept classes for instantiaion by interactive fictions.'
+'World and Concept classes for instantiation by interactive fictions.'
 
 __author__ = 'Nick Montfort'
 __copyright__ = 'Copyright 2011 Nick Montfort'
@@ -102,7 +102,7 @@ class WorldOrConcept(object):
         the agent of the action. If the Item has an "alive" feature, it is only 
         added if alive is True.
 
-        A special case: If the agent has congifured itself to new Room, the new
+        A special case: If the agent has configured itself to new Room, the new
         room and (living) contents have a chance to respond, too."""
         tag_list = []
         tag_list.append('@cosmos')
@@ -300,7 +300,7 @@ class World(WorldOrConcept):
             self.concept[actor].ticks = self.ticks
 
     def back_up_clock(self, target_time):
-        'Roll the time back to a particuar tick.'
+        'Roll the time back to a particular tick.'
         self.ticks = target_time
         for actor in self.concept:
             self.concept[actor].roll_back_to(self.ticks)
@@ -392,7 +392,7 @@ class World(WorldOrConcept):
         # 0.2 is the threshhold for seeing something.
         # An actor sees something that has prominence 0.5 and is in a room with
         #   view 0.5 under full light (1): 0.5 * 0.5 * 1 = 0.25 >= 0.2
-        # An actor sees something that has prominece 1 and is in the same room
+        # An actor sees something that has prominence 1 and is in the same room
         #   even under very low (0.2) light: 1 * 1 * .02 = 0.2 >= 0.2
         # Something with prominence below 0.2 will never be visible to an actor
         #   in the current system.

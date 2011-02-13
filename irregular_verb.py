@@ -2,7 +2,7 @@
 
 Not only irregular verbs (strictly speaking) but also any regular verbs that
 are not correctly conjugated by the simple algorithm in the Realizer. The
-Realizer does not do any consontant doubling, so verbs whose consontants are
+Realizer does not do any consonant doubling, so verbs whose consonants are
 doubled have to be included here.
 """
 

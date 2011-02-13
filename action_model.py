@@ -60,7 +60,7 @@ class Action(object):
 
     @property
     def category(self):
-        'Returns the category (behave, congifure, etc.) as a lowercase string.'
+        'Returns the category (behave, configure, etc.) as a lowercase string.'
         return self._category
 
     @property
