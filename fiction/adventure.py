@@ -528,7 +528,7 @@ class Bear(Actor):
                                   direct='@bear', feature='alive',
                                   new=False))
             if self.chained:
-                holder == world.item['@chain'].parent
+                holder = world.item['@chain'].parent
                 actions.append(Modify('die', '@cosmos',
                                       template='[direct/s] [die/1/v]',
                                       direct=holder, feature='alive',
